@@ -68,8 +68,8 @@ A comprehensive, production-ready observability platform built on Prometheus, Gr
 ### 1. Deploy Stack
 
 ```bash
-git clone https://github.com/Totti786/observability-stack.git
-cd observability-stack
+git clone https://github.com/totti786/observability.git
+cd observability
 
 # Start all services
 docker-compose up -d
@@ -95,7 +95,7 @@ Pre-built dashboards are automatically provisioned:
 - Kubernetes Cluster
 - Node Metrics
 - Container Metrics
-- Nginx Metrics
+- Traefik Metrics
 - PostgreSQL Metrics
 - Redis Metrics
 - Application Performance
@@ -228,7 +228,7 @@ datasources:
 
 | Exporter | Port | Purpose |
 |----------|------|---------|
-| nginx-exporter | 9113 | Nginx metrics |
+| Traefik (built-in) | 8080 | Traefik metrics |
 | apache-exporter | 9117 | Apache metrics |
 
 ### Application
